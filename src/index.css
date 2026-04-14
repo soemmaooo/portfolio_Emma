@@ -1,0 +1,47 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100..900&family=Silkscreen:wght@400;700&family=Sofia+Sans:ital,wght@0,1..1000;1,1..1000&display=swap');
+@import 'tailwindcss';
+
+@theme {
+  /* font */
+  --font-sans:
+    'Sofia Sans', 'Noto Sans TC', 'PingFang TC', 'Microsoft JhengHei',
+    sans-serif;
+  --font-silkscreen:
+    'Silkscreen', 'Noto Sans TC', 'PingFang TC', 'Microsoft JhengHei',
+    sans-serif;
+
+  /* color */
+  --color-bg-main: #fff;
+  --color-text-main: #000;
+  --color-main-yellow-50: #fefce8;
+  --color-main-yellow-100: #fcf4a9;
+  --color-main-yellow-200: #fced8c;
+  --color-main-yellow-300: #fadc4a;
+  --color-main-yellow-400: #f6c719;
+  --color-main-yellow-500: #e6ae0c;
+  --color-main-yellow-600: #c68608;
+  --color-main-yellow-700: #9e600a;
+  --color-main-yellow-800: #834c10;
+  --color-main-yellow-900: #6f3e14;
+  --color-main-yellow-950: #411f07;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+}
+
+@layer components {
+  .btn-primary {
+    @apply cursor-pointer bg-white text-black font-bold border border-main-yellow-200 px-4 md:px-8 py-2 rounded-4xl shadow-sm transition-all;
+
+    &:hover {
+      @apply bg-main-yellow-200 shadow-main-yellow-600/30 translate-0.5;
+    }
+
+    &:focus {
+      @apply outline-1 outline-main-yellow-400;
+    }
+  }
+}
