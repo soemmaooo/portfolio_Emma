@@ -18,7 +18,8 @@
 
 ```
 src/
-├── components/          # 各個功能區塊組件
+├── components/          # 功能組件
+├── sections/            # 區塊組件
 │   ├── Navbar.jsx       # 導覽列
 │   ├── Hero.jsx         # 英雄區塊 (首頁介紹)
 │   ├── About.jsx        # 關於我與技能區塊
