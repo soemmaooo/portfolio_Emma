@@ -12,7 +12,7 @@ const Projects = () => {
       tags: ['React', 'Bootstrap 5', 'Axios', 'RWD'],
       myFeatures:
         '前後台視覺視覺設計：主導專案整體的視覺風格定位與 UI 介面美化。\n前台：\n- 購物車系統：開發即時同步的購物車，支援數量增減與詳情確認。\n- 結帳與訂單：負責結帳頁面開發、串接結帳相關 API、填寫購買資料及訂單送出邏輯。\n- 會員中心：建置會員專區，供使用者追蹤訂單資訊與歷史紀錄。\n後台：\n- 商品管理模組：開發商品的新增、修改、刪除及進階篩選功能，確保後台數據維護的便利性。',
-      img: 'src/assets/img/project_GreenGo.png',
+      img: 'img/project_GreenGo.png',
       github: 'https://github.com/0811nora/greengo',
       web: 'https://0811nora.github.io/greengo/',
     },
@@ -25,7 +25,7 @@ const Projects = () => {
       myFeatures:
         '作為首頁的主要開發者，我負責範圍涵蓋了使用者的第一印象與核心導航邏輯：\n- 視覺導航與佈局：建置包含導航列（Header）與頁尾（Footer）的整體框架，並完成 RWD 響應式設計（PC 與手機版）。\n- 預約導流邏輯：規劃與設計引導使用者快速前往預約服務頁面及菜單頁的入口按鈕，提升轉換效率。',
       tags: ['Bootstrap 5', 'RWD'],
-      img: 'src/assets/img/project_Moonook.png',
+      img: 'img/project_Moonook.png',
       github: 'https://github.com/0811nora/moonook-demo',
       web: 'https://0811nora.github.io/moonook-demo/',
     },
@@ -59,7 +59,6 @@ const Projects = () => {
               </div>
               <div className="p-6">
                 <h3 className="text-xl font-bold mb-2">{project.title}</h3>
-
                 <p className="text-slate-600 leading-7 whitespace-pre-wrap mb-4">
                   {project.info}
                 </p>

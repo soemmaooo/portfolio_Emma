@@ -29,18 +29,18 @@ const Hero = () => {
       </div>
       <img
         className="absolute top-1/2 left-1/4 z-1 hidden md:block"
-        src="src/assets/img/cat.png"
+        src="img/cat.png"
         alt="cat"
       />
       <img
         className="absolute top-1/4 right-1/3 z-1 hidden md:block"
-        src="src/assets/img/code.png"
+        src="img/code.png"
         alt="code"
       />
       <img
         className="w-dvw absolute left-1/2 -translate-x-1/2 bottom-0 z-0"
-        src="src/assets/img/hero_bg.png"
-        alt="hero_c"
+        src="img/hero_bg.png"
+        alt="hero_bg"
       />
     </section>
   );

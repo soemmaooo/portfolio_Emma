@@ -3,7 +3,7 @@ const Navbar = () => {
     <nav className="sticky top-0 z-50 bg-white/80 backdrop-blur-md shadow-sm">
       <div className="max-w-5xl mx-auto px-6 py-4 flex justify-between items-center">
         <div className="w-10 flex items-center">
-          <img src="/lemon_cat_logo.png" alt="lemon_cat_logo" />
+          <img src="lemon_cat_logo.png" alt="lemon_cat_logo" />
           <span className="text-main-yellow-400 text-2xl font-silkscreen font-normal ms-1 hidden md:block">
             EMMA
           </span>
