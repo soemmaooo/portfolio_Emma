@@ -5,7 +5,8 @@
 網站連結：[https://soemmaooo.github.io/portfolio_Emma/](https://soemmaooo.github.io/portfolio_Emma/)
 
 ## 作品發想由來
-我認為一個好的履歷網頁不應只是單純的文字排列，更是一個展現個人程式碼風格與 UI/UX 審美的「數位名片」。
+我認為履歷不該只是冷冰冰的文字，更像是一張能展現我設計美感的「數位名片」。
+為了實現理想的效果，我嘗試運用 React 與自學的 Tailwind CSS，從零開始打造這個履歷網站。
 
 ## 使用技術
 |    | 技術 |
