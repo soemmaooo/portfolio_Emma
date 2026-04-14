@@ -1,16 +1,30 @@
-# React + Vite
+# 個人履歷網站 (Emma Portfolio)
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+這是一個基於 React 與 Tailwind CSS 開發的現代化、響應式一頁式履歷網站，旨在簡潔且專業地展示我的個人背景、技術棧與精選作品。
+![Portfolio_EmmaSu](https://github.com/user-attachments/assets/24a24f1f-7a79-41ec-9d35-1d74664e6d77)
+網站連結：[https://soemmaooo.github.io/portfolio_Emma/](https://soemmaooo.github.io/portfolio_Emma/)
 
-Currently, two official plugins are available:
+## 作品發想由來
+我認為一個好的履歷網頁不應只是單純的文字排列，更是一個展現個人程式碼風格與 UI/UX 審美的「數位名片」。
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## 使用技術
+|    | 技術 |
+| ------------- |:-------------:|
+| 核心框架      | React     |
+| 樣式設計      | Tailwind CSS     |
+| 構建工具      | Vite     | 
 
-## React Compiler
+## 專案架構
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
-
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+```
+src/
+├── components/          # 各個功能區塊組件
+│   ├── Navbar.jsx       # 導覽列
+│   ├── Hero.jsx         # 英雄區塊 (首頁介紹)
+│   ├── About.jsx        # 關於我與技能區塊
+│   ├── Projects.jsx     # 作品集展示
+│   └── Footer.jsx       # 頁尾與聯絡資訊
+├── App.jsx              # 主組件
+├── index.css            # Tailwind 樣式定義
+└── main.jsx             # React 入口點
+```
