@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import ProjectModal from '../components/ProjectModal';
+import { AnimatePresence } from 'framer-motion';
 
 const Projects = () => {
   const projectList = [
@@ -98,9 +99,11 @@ const Projects = () => {
           ))}
         </div>
       </div>
-      {isOpen && (
-        <ProjectModal onClose={() => setIsOpen(false)} data={projectInfo} />
-      )}
+      <AnimatePresence>
+        {isOpen && (
+          <ProjectModal onClose={() => setIsOpen(false)} data={projectInfo} />
+        )}
+      </AnimatePresence>
     </section>
   );
 };

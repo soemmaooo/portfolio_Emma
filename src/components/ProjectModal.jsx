@@ -1,11 +1,32 @@
+import { useEffect } from 'react';
+// eslint-disable-next-line no-unused-vars
+import { motion, AnimatePresence } from 'framer-motion';
+
 const ProjectModal = ({ onClose, data }) => {
+  useEffect(() => {
+    document.body.style.overflow = 'hidden';
+    return () => {
+      document.body.style.overflow = 'auto';
+    };
+  }, []);
+
   return (
     <>
-      <div
+      <motion.div
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        exit={{ opacity: 0 }}
         className="fixed inset-0 z-50 flex items-center justify-center backdrop-blur-md"
         onClick={onClose}
       >
-        <div className="relative mx-4 max-h-[85vh] w-full max-w-220 overflow-y-auto rounded-4xl bg-main-yellow-100/80 px-4 py-10 backdrop-blur-lg md:px-8 md:py-12 lg:p-14">
+        <motion.div
+          initial={{ opacity: 0, scale: 0.9 }}
+          animate={{ opacity: 1, scale: 1 }}
+          exit={{ opacity: 0, scale: 0.9 }}
+          transition={{ duration: 0.2, ease: 'easeInOut' }}
+          onClick={(e) => e.stopPropagation()}
+          className="relative mx-4 max-h-[85vh] w-full max-w-220 overflow-y-auto rounded-4xl bg-main-yellow-100/80 px-4 py-10 backdrop-blur-lg md:px-8 md:py-12 lg:p-14 custom-scrollbar"
+        >
           <button
             className="absolute top-5 right-8 cursor-pointer"
             onClick={onClose}
@@ -56,8 +77,8 @@ const ProjectModal = ({ onClose, data }) => {
               </a>
             </div>
           </div>
-        </div>
-      </div>
+        </motion.div>
+      </motion.div>
     </>
   );
 };
